@@ -12,10 +12,9 @@ app.use(bodyParser.json({ type: "application/vnd.api+json"}));
 
 app.use(express.static("app/public"));
 
-require("../routing/apiRoutes")(app);
-require("../routing/htmlRoutes")(app);
+require("./app/routing/apiRoutes")(app);
+require("./app/routing/htmlRoutes")(app);
 
 app.listen(port, () => console.log("listening on port 3000"));
-
 
 
