@@ -7,7 +7,6 @@ module.exports = function(app){
 app.post("/api/friends", function(req, res){
     
     var newFriend = req.body;
-   /*  var newScore = 0; */
     var total = 0;
     var matchName;
     var matchPhoto;
